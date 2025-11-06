@@ -17,9 +17,32 @@
 ---
 
 ### ERPNext Print Formats  
+<div align="center">
+
+# 🧾 ERPNext Print Formats  
+### Reusable, Polished Print Templates for ERPNext & Frappe  
+
+<img src="https://raw.githubusercontent.com/frappe/erpnext/develop/erpnext/public/images/erpnext-logo.png" alt="ERPNext Logo" width="180"/>
+
+</div>
+
+---
+
+## ✨ Overview  
+
+> **ERPNext Print Formats** is a lightweight Frappe app providing ready-made, reusable **print templates** for documents like Payment and Receiving Vouchers.  
+> Simplify your ERP workflow — no need to design formats from scratch.  
+
+---
+
+### ERPNext Print Formats  
 
 ERPNext Print Formats  
+ERPNext Print Formats  
 
+---
+
+### 🧩 Installation  
 ---
 
 ### 🧩 Installation  
@@ -39,9 +62,21 @@ bench install-app erpnext_print_formats
 </div>
 
 ---
+````
+
+<div align="center">
+<img src="https://img.shields.io/badge/ERPNext-Compatible-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Frappe-Framework-green?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Python-3.10%2B-yellow?style=for-the-badge" />
+</div>
+
+---
 
 ### 🤝 Contributing
+### 🤝 Contributing
 
+This app uses `pre-commit` for code formatting and linting.
+Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
 This app uses `pre-commit` for code formatting and linting.
 Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
 
@@ -58,17 +93,30 @@ Pre-commit is configured to use the following tools for checking and formatting 
 * ⚙️ **pyupgrade**
 
 ---
+* 🐍 **ruff**
+* 💅 **eslint**
+* 🎨 **prettier**
+* ⚙️ **pyupgrade**
+
+---
 
 ### ⚙️ CI
+### ⚙️ CI
 
+This app can use GitHub Actions for CI.
+The following workflows are configured:
 This app can use GitHub Actions for CI.
 The following workflows are configured:
 
 * 🧪 **CI:** Installs this app and runs unit tests on every push to `develop` branch.
 * 🔍 **Linters:** Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
+* 🧪 **CI:** Installs this app and runs unit tests on every push to `develop` branch.
+* 🔍 **Linters:** Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
 
 ---
+---
 
+### 🪪 License
 ### 🪪 License
 
 **MIT**
@@ -76,7 +124,7 @@ The following workflows are configured:
 ---
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/30859809/222095158-d19a7f68-82f8-4b8a-b5f3-08f80d6abf5a.png" alt="ERPNext Print Preview" width="80%"/>
+<img src="Payment Voucher.png" alt="ERPNext Print Preview" width="80%"/>
 <p><em>Example Print Format — Payment Voucher</em></p>
 </div>
 
@@ -142,7 +190,7 @@ After this, you’ll see new formats in the **Print Format** list inside ERPNext
 4. Open a Payment Entry → click **Print** → choose your format.
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/30859809/222096237-b6d5c8ac-74e7-4997-bf8d-27bdb12f6eac.png" alt="Print Format Selection" width="70%"/>
+<img src="Print Format Selection.png" alt="Print Format Selection" width="70%"/>
 </div>
 
 ---
