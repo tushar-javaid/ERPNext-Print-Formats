@@ -76,7 +76,7 @@ The following workflows are configured:
 ---
 
 <div align="center">
-<img src="Payment Voucher.png" alt="ERPNext Print Preview" width="80%"/>
+<img src="erpnext_print_formats/assets/Payment Voucher.png" alt="ERPNext Print Preview" width="80%"/>
 <p><em>Example Print Format — Payment Voucher</em></p>
 </div>
 
@@ -142,7 +142,7 @@ After this, you’ll see new formats in the **Print Format** list inside ERPNext
 4. Open a Payment Entry → click **Print** → choose your format.
 
 <div align="center">
-<img src="Print Format Selection.png" alt="Print Format Selection" width="70%"/>
+<img src="erpnext_print_formats/assets/Print Format Selection.png" alt="Print Format Selection" width="70%"/>
 </div>
 
 ---
