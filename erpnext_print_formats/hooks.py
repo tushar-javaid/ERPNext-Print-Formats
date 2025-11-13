@@ -241,3 +241,18 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+fixtures = [
+    {
+        "doctype": "Print Format",
+        "filters": [["name", "in", ["Receiving Voucher", "Payment Voucher"]]]
+    },
+    {
+        "doctype": "Print Style",
+        "filters": [["name", "=", "Jameel Noori Nastaleeq Regular"]]
+    },
+    {
+        "doctype": "File",
+        "filters": [["name", "=", "dd72203411"]]
+    }
+]
