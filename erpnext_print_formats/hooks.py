@@ -5,7 +5,7 @@ app_description = "ERPNext Print Formats"
 app_email = "tusharjavaid99@gmail.com"
 app_license = "mit"
 
-# Mein hoon don
+
 # Apps
 # ------------------
 
@@ -257,3 +257,7 @@ fixtures = [
         "filters": [["name", "=", "dd72203411"]]
     }
 ]
+
+# hooks.py
+after_install = "erpnext_print_formats.install.after_install"
+
