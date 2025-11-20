@@ -22,10 +22,18 @@ def upload_public_font():
     font_path = frappe.get_app_path(app, "assets", font_name)
 
     if not os.path.exists(font_path):
-        frappe.log_error(
-            f"Font '{font_name}' not found at {font_path}",
-            "erpnext_print_formats: font missing"
+        # Avoid writing a very long string into Error Log.method (DB column length limited).
+        # Use the app logger for the full path, and write a short error entry if needed.
+        frappe.logger("erpnext_print_formats").error(
+            f"Font '{font_name}' not found at {font_path}"
         )
+
+        # Write a short error record to Error Log to keep a trace (short title only).
+        try:
+            frappe.log_error(message="font missing", title=f"{app}: font not found")
+        except Exception:
+            # If logging to Error Log fails for any reason, do not block installation.
+            pass
         return
 
     # Create public/files folder if missing

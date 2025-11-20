@@ -252,10 +252,6 @@ fixtures = [
         "doctype": "Print Style",
         "filters": [["name", "=", "Jameel Noori Nastaleeq Regular"]]
     },
-    {
-        "doctype": "File",
-        "filters": [["name", "=", "dd72203411"]]
-    }
 ]
 
 # hooks.py
